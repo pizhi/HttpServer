@@ -222,6 +222,7 @@ void start_server(int port)
 		}
 		close(clientfd);
 	}
+    close(socketfd);
 }
 
 void sighandler(int signo)
